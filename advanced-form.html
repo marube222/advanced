@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Summit 2025 - Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Tech Summit 2025</h1>
+        <p>Join the biggest tech conference of the year!</p>
+    </header>
+
+    <section>
+        <h2>Event Highlights</h2>
+        <ul>
+            <li>Keynote speeches from industry leaders</li>
+            <li>Hands-on workshops</li>
+            <li>Networking opportunities</li>
+            <li>Startup pitching sessions</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Event Schedule</h2>
+        <table border="1" cellpadding="8">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Session</th>
+                    <th>Speaker</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09:00 AM</td>
+                    <td>Opening Keynote</td>
+                    <td>Mark Odhiambo</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM</td>
+                    <td>AI & Future of Work</td>
+                    <td>John Munene</td>
+                </tr>
+                <tr>
+                    <td>02:00 PM</td>
+                    <td>Startup Pitch Finals</td>
+                    <td>Panel of Judges</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Promo Video</h2>
+        <video controls width="400">
+            <source src="promo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section>
+        <h2>Register Now</h2>
+        <form>
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required minlength="3"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10 digits" required><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Event Details</legend>
+                <label for="session">Select Session:</label>
+                <select id="session" name="session" required>
+                    <option value="">--Select--</option>
+                    <option value="keynote">Opening Keynote</option>
+                    <option value="ai">AI & Future of Work</option>
+                    <option value="pitch">Startup Pitch Finals</option>
+                </select><br><br>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required><br><br>
+            </fieldset>
+
+            <input type="submit" value="Register">
+        </form>
+    </section>
+</body>
+</html>
